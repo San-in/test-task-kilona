@@ -1,7 +1,6 @@
 import React, {memo} from 'react';
-import {Platform, TouchableOpacity, View} from 'react-native';
+import {TouchableOpacity, View} from 'react-native';
 import {BottomTabBarProps} from '@react-navigation/bottom-tabs';
-import {SafeAreaView} from 'react-native-safe-area-context';
 import IconNav from '../nav-icon';
 import {styles} from './styles.ts';
 import {useAppDispatch, useAppSelector} from '../../store/hooks.ts';
