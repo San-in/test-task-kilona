@@ -15,12 +15,12 @@ const BottomTabBar: React.FC<BottomTabBarProps> = ({
   const dispatch = useAppDispatch();
   const visible = useAppSelector(selectTabBar);
   return (
-    <SafeAreaView
+    <View
       style={[
         styles.container,
         {
           display: visible ? 'flex' : 'none',
-          paddingBottom: Platform.OS === 'android' ? 20 : null,
+          paddingBottom: 20,
         },
       ]}>
       <View style={styles.bar}>
@@ -58,7 +58,7 @@ const BottomTabBar: React.FC<BottomTabBarProps> = ({
           );
         })}
       </View>
-    </SafeAreaView>
+    </View>
   );
 };
 
